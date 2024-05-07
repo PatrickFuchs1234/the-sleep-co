@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+[class*="col-"],
+[class*="col_"],
+[class~="col"] {
+  padding: 0;
+}
+
 /* Temporary style  */
 /* section{
     padding: 0.5rem;
@@ -134,4 +140,31 @@ footer a{
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
+}
+
+.navigation{
+    padding:1%;
+
+}
+
+.navlinks h2{
+    font-size: 2rem;
+    padding: 1% 4%;
+    margin: 0;
+    color: #FFBE00;
+}
+
+.navrechts {
+    font-size: 1rem;
+    text-align: right;
+    padding: 1% 4%;
+}
+
+.navrechts a{
+    padding: 0 2%;
+}
+
+.noborder a{
+    text-decoration: none;
+    border: none;
 }

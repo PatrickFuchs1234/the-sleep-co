@@ -224,7 +224,7 @@ a:hover {
 
 /* --------------------------------Header and footer styles */
 header{
-    background-image: url(images/the-sleep-co-\(4\).jpg);
+    background-image: url('/images/the-sleep-co-4.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -239,16 +239,16 @@ footer a{
 }
 
 /* Backgroundimages */
-.bg-bed{background-image: url(images/the-sleep-co-\(3\).jpg);}
+.bg-bed{background-image: url('/images/the-sleep-co-3.jpg');}
 .bg-dog{
-    background-image: url(images/the-sleep-co-\(1\).jpg);
+    background-image: url('/images/the-sleep-co-1.jpg');
     background-position: 50% 35%;
 }
 .bg-pillow{
-    background-image: url(images/the-sleep-co-\(2\).jpg);
+    background-image: url('/images/the-sleep-co-2.jpg');
     background-position: 50% 57%;
 }
-.bg-sheets{background-image: url(images/the-sleep-co-\(4\).jpg);}
+.bg-sheets{background-image: url('/images/the-sleep-co-4.jpg');}
 
 /* icon grid */
 .fas{

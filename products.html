@@ -1,5 +1,15 @@
 ---
 layout: default
+cards:
+ - heading: A small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus voluptas recusandae quasi vero, sapiente, ut perferendis quibusdam minima delectus, eos expedita esse! Unde reprehenderit voluptates eius ipsa culpa exercitationem!
+   featured_image: /images/the-sleep-co-4.jpg
+ - heading: A small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus voluptas recusandae quasi vero, sapiente, ut perferendis quibusdam minima delectus, eos expedita esse! Unde reprehenderit voluptates eius ipsa culpa exercitationem!
+   featured_image: /images/the-sleep-co-1.jpg
+ - heading: A small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus voluptas recusandae quasi vero, sapiente, ut perferendis quibusdam minima delectus, eos expedita esse! Unde reprehenderit voluptates eius ipsa culpa exercitationem!
+   featured_image: /images/the-sleep-co-2.jpg
 ---
 
 <!-- THIS IS TE BODY, all th econtent goes into the body-->
@@ -13,10 +23,8 @@ layout: default
     </div>
   </header>
 
-
 <!-- ----------------------product grid -->
-
-<section class="padded grid bg-dark">
+  <section class="padded grid bg-dark">
     <div class="padded-small col-12 text-center"> 
       <h2> <span class="featured-text"> products</span> you will love</h2>
     </div>
@@ -38,67 +46,52 @@ layout: default
     </div>
   </section>
 
+<!-- cards -->
   <section class="grid padded">
+    
+    {% for item in page.cards %}
     <div class="col-4-sm-12">
         <div class="card padded-small">
-            <div class="bg-image portrait"></div>
+            <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
             <div class="padded-1">
-                <h3> little heading</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium libero, amet alias nisi et ex laborum reprehenderit vitae architecto, voluptatem ipsam voluptas cupiditate ab placeat facere quo magnam vero.</p>
+                <h3> {{item.heading}}</h3>
+                <p> {{item.description}} </p>
             </div>
         </div>
     </div>
-    <div class="col-4-sm-12">
-        <div class="card padded-small">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3> little heading</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium libero, amet alias nisi et ex laborum reprehenderit vitae architecto, voluptatem ipsam voluptas cupiditate ab placeat facere quo magnam vero.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-4-sm-12">
-        <div class="card padded-small">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3> little heading</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium libero, amet alias nisi et ex laborum reprehenderit vitae architecto, voluptatem ipsam voluptas cupiditate ab placeat facere quo magnam vero.</p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
   </section>
 
+<!-------------------------------- banner section -->
+  <section class="padded text-center bg-dark tall-70 grid">
+      <div class="col-12-middle">
+          <h3 class="text-big font-weight-extrabold">
+          <span class="text-sm font-weight-normal"> spent over 259$ for</span>
+          <br> free <span class="featured-text">express shipping</span> 
+          </h3>
+      </div>
+  </section>
 
-      <!-------------------------------- banner section -->
-    <section class="padded text-center bg-dark tall-70 grid">
-        <div class="col-12-middle">
-            <h3 class="text-big font-weight-extrabold">
-            <span class="text-sm font-weight-normal"> spent over 259$ for</span>
-            <br> free <span class="featured-text">express shipping</span> 
-            </h3>
-        </div>
-    </section>
-
-    <section class="grid">
-        <div class="padded col-6-middle">
+  <section class="grid">
+      <div class="padded col-6-middle">
+        <h2>built to last a <span class="featured-text"> lifetime </span></h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ut hic temporibus iure, ullam nihil quod provident consequatur exercitationem nesciunt veritatis dolor laborum vitae, atque sequi, cupiditate quidem commodi odit.</p>
+      </div>
+      <div class="bg-image bg-bed col-6 tall-70">
+        <!-- background image bed -->
+      </div>
+      <div class="bg-image bg-dog col-6 tall-70">
+        <!-- backgroundimage mops -->
+      </div>
+      <div class="padded col-6-middle">
+        <h2> so <span class="featured-text">soft</span> you'll melt</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur asperiores at consectetur quibusdam deleniti, quod quae neque quasi officiis, eveniet itaque fuga ad sunt in quia corrupti, dolores sequi!</p>
+      </div>
+      <div class="padded col-6-middle">
           <h2>built to last a <span class="featured-text"> lifetime </span></h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ut hic temporibus iure, ullam nihil quod provident consequatur exercitationem nesciunt veritatis dolor laborum vitae, atque sequi, cupiditate quidem commodi odit.</p>
-        </div>
-        <div class="bg-image bg-bed col-6 tall-70">
+      </div>
+      <div class="bg-image bg-bed col-6 tall-70">
           <!-- background image bed -->
-        </div>
-        <div class="bg-image bg-dog col-6 tall-70">
-          <!-- backgroundimage mops -->
-        </div>
-        <div class="padded col-6-middle">
-          <h2> so <span class="featured-text">soft</span> you'll melt</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur asperiores at consectetur quibusdam deleniti, quod quae neque quasi officiis, eveniet itaque fuga ad sunt in quia corrupti, dolores sequi!</p>
-        </div>
-        <div class="padded col-6-middle">
-            <h2>built to last a <span class="featured-text"> lifetime </span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ut hic temporibus iure, ullam nihil quod provident consequatur exercitationem nesciunt veritatis dolor laborum vitae, atque sequi, cupiditate quidem commodi odit.</p>
-        </div>
-        <div class="bg-image bg-bed col-6 tall-70">
-            <!-- background image bed -->
-        </div>
-    </section>
+      </div>
+  </section>

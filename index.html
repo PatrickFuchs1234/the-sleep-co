@@ -1,13 +1,13 @@
 ---
 layout: default
 featured:
- - icon: fa-brands fa-soundcloud fas
+ - icon: fa-brands fa-soundcloud 
    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aliquam corporis, hic quis assumenda quisquam, vitae voluptates exercitationem impedit eius sapiente modi dolores quaerat beatae molestiae quo, iusto numquam debitis.
- - icon: fa-solid fa-smog fas
+ - icon: fa-solid fa-smog 
    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aliquam corporis, hic quis assumenda quisquam, vitae voluptates exercitationem impedit eius sapiente modi dolores quaerat beatae molestiae quo, iusto numquam debitis.
- - icon: fa-solid fa-cloud-showers-water fas
+ - icon: fa-solid fa-cloud-showers-water 
    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aliquam corporis, hic quis assumenda quisquam, vitae voluptates exercitationem impedit eius sapiente modi dolores quaerat beatae molestiae quo, iusto numquam debitis.
- - icon: fa-solid fa-cloud-meatball fas
+ - icon: fa-solid fa-cloud-meatball 
    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aliquam corporis, hic quis assumenda quisquam, vitae voluptates exercitationem impedit eius sapiente modi dolores quaerat beatae molestiae quo, iusto numquam debitis.
 ---
 
@@ -48,7 +48,7 @@ featured:
   </div>
   {% for item in page.featured %}
   <div class="padded-small col-3">
-    <i class=" {{item.icon}}"></i>
+    <i class=" {{item.icon}} fas"></i>
     <p> {{item.description}} </p>
   </div>
   {% endfor %}

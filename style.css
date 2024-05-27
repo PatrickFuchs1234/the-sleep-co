@@ -238,6 +238,36 @@ footer a{
     border: none;
 }
 
+/* mobile menue stiles  */
+.mobile-menu{
+    position: fixed;
+    top: 18vw;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+
+}
+
+.mobile-menu a{
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.hamburger-button{
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger-button.active{
+    color: #FFBE00;
+}
+
+.hamburger-button i{
+    font-size: 2.2rem;
+}
+
+
 /* Backgroundimages */
 .bg-bed{background-image: url('/images/the-sleep-co-3.jpg');}
 .bg-dog{
@@ -302,7 +332,8 @@ textarea{
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 

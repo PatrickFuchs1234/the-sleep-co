@@ -2,19 +2,19 @@
 layout: default
 gallery:
    -
-      colomn-size: col-4
+      column-size: col-4
       aspect-ratio: portrait
       gallery_image: /images/the-sleep-co-4.jpg
    -
-      colomn-size: col-4
+      column-size: col-4
       aspect-ratio: portrait
       gallery_image: /images/the-sleep-co-2.jpg
    -
-      colomn-size: col-4
+      column-size: col-4
       aspect-ratio: portrait
       gallery_image: /images/the-sleep-co-3.jpg
    -
-      colomn-size: col-12
+      column-size: col-12
       aspect-ratio: landscape-wide
       gallery_image: /images/the-sleep-co-3.jpg
 ---
@@ -36,7 +36,7 @@ gallery:
     <div class="galery grid padded">
 
     {% for item in page.gallery%}
-      <div class="{{item.colomn-size}} padded-05"> 
+      <div class="{{item.column-size}} padded-05"> 
         <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}');">
         </div>
       </div>

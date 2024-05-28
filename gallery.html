@@ -1,17 +1,19 @@
 ---
 layout: default
 gallery:
- - colomn-size: col-4
-   aspect-ratio: portrait
-   gallery_image: /images/the-sleep-co-4.jpg
- - colomn-size: col-4
-   aspect-ratio: portrait
-   gallery_image: /images/the-sleep-co-2.jpg
- - colomn-size: col-4
-   aspect-ratio: portrait
-   gallery_image: /images/the-sleep-co-3.jpg
+   -
+      colomn-size: col-4
+      aspect-ratio: landscape
+      gallery_image: /images/the-sleep-co-4.jpg
+   -
+      colomn-size: col-4
+      aspect-ratio: portrait
+      gallery_image: /images/the-sleep-co-2.jpg
+   -
+      colomn-size: col-4
+      aspect-ratio: portrait
+      gallery_image: /images/the-sleep-co-3.jpg
 ---
-
 <!------------------------- Header Banner -->
 <header class="padded grid text-center tall-80">
     
@@ -31,8 +33,7 @@ gallery:
 
     {% for item in page.gallery%}
       <div class="{{item.colomn-size}} padded-05"> 
-        <div  class="bg-image {{item.aspect-ratio}}" 
-              style="background-image: url('{{item.gallery_image}}');">
+        <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}');">
         </div>
       </div>
     {% endfor %}

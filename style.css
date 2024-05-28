@@ -122,7 +122,8 @@
 
     /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
-    .landscape     { padding-bottom: 66%:  }
+    .landscape-wide {padding-bottom: 56%;}
+    .landscape     { padding-bottom: 66%;  }
     .portrait-tall { padding-bottom: 175%; }
     .portrait      { padding-bottom: 125%; }
     .square        { padding-bottom: 100%; }
@@ -245,7 +246,7 @@ footer a{
     bottom: 0; 
     left: 0;
     right: 0;
-	z-index:1;
+	z-index: 1;
 
 }
 
@@ -280,6 +281,12 @@ footer a{
     background-position: 50% 57%;
 }
 .bg-sheets{background-image: url('/images/the-sleep-co-4.jpg');}
+
+/* unsplash stock photo */
+    .bg-image1 {
+        background-image: url(https://source.unsplash.com/WJDR8_QxVR8);
+    }
+
 
 /* icon grid */
 .fas{
@@ -323,9 +330,6 @@ textarea{
     width: 100%;
     display: block;
 }
-
-
-
 
 
 

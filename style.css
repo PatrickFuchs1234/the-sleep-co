@@ -287,6 +287,40 @@ footer a{
         background-image: url(https://source.unsplash.com/WJDR8_QxVR8);
     }
 
+/* Gallery styles */
+
+.gallery a{
+    border: none;
+}
+
+.gallery .a:hover{
+    border: none;
+}
+
+.gallery .button{
+    background-color: #FFBE00;
+    color:#192B37;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    margin: 0.5rem;
+}
+
+.gallery .button:hover{
+    background-color: #192B37;
+    color: #FFBE00;
+    border: 1px solid #FFBE00;
+}
+
+/* Background of gallery when active */
+.lg-backdrop { background-color: rgb(80, 80, 80);}
+.lg-backdrop.in { opacity: 0.9; }
+
+.lg-sub-html {
+    padding-bottom: 2rem;
+    /* background-color: rgba(80, 80, 80, 0.95); */
+}
+
 
 /* icon grid */
 .fas{

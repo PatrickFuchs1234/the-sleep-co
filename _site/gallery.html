@@ -22,6 +22,9 @@
     <!-- animate on scroll -->
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Lightgallery for pop-ups  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- this is our CSS stylesheet, this always goes last! -->
       <link rel="stylesheet" href="/style.css">
 
@@ -70,8 +73,59 @@
     </div>
 </header>
 
-<section>
-    <div class="galery grid padded">
+<!-- Popup Gallery -->
+  <section>
+    <h2 class="text-center padded-t"> Popup gallery </h2>
+      <div class="gallery grid padded" id="lightgallery">
+
+      
+        <a class="col-4 padded-05" href="/images/the-sleep-co-4.jpg"> 
+          <div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-4.jpg');">
+          </div>
+        </a>
+      
+        <a class="col-4 padded-05" href="/images/the-sleep-co-2.jpg"> 
+          <div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-2.jpg');">
+          </div>
+        </a>
+      
+        <a class="col-4 padded-05" href="/images/the-sleep-co-3.jpg"> 
+          <div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-3.jpg');">
+          </div>
+        </a>
+      
+        <a class="col-12 padded-05" href="/images/the-sleep-co-3.jpg"> 
+          <div class="bg-image landscape-wide" style="background-image: url('/images/the-sleep-co-3.jpg');">
+          </div>
+        </a>
+      
+
+      </div>
+  </section>
+
+<!-- Popup Gallery 2 button...-->
+  <section class="bg-dark">
+    <h2 class="text-center padded-t"> See what we did</h2>
+      <div class="gallery padded text-center" id="lightgallery-2">
+
+        <a class="button" href="images/the-sleep-co-1.jpg" title="Funny dog 1"> 
+          View our work
+        </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 2"> </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 3"> </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 4"> </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 5"> </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 6"> </a>
+        <a href="images/the-sleep-co-1.jpg" title="Funny dog 7"> </a>
+
+      </div>
+  </section>
+
+
+<!-- Standard Gallery -->
+  <section>
+    <h2 class="text-center padded-t"> Standard gallery </h2>
+    <div class="gallery grid padded">
 
     
       <div class="col-4 padded-05"> 
@@ -96,31 +150,31 @@
     
 
     </div>
-</section>
+  </section>
 
-
-  <!-- 
-  <div class="col-4">
-    <div class="bg-image bg-image2 portrait"></div>
-  </div>
-  <div class="col-4">
-    <div class="bg-image bg-image1 portrait"></div>
-  </div>
-  <div class="col-4">
-    <div class="bg-image bg-image5 portrait"></div>
-  </div>
-  <div class="col-6">
-    <div class="bg-image bg-image3 landscape"></div>
-  </div>
-  <div class="col-6">
-    <div class="bg-image bg-image4 landscape"></div>
-  </div>
-  <div class="col-6">
-    <div class="bg-image bg-image5 landscape"></div>
-  </div>
-  <div class="col-6">
-    <div class="bg-image bg-image6 landscape"></div>
-  </div> -->
+<!-- old gallery bevore Jekyllfied -->
+      <!-- 
+      <div class="col-4">
+        <div class="bg-image bg-image2 portrait"></div>
+      </div>
+      <div class="col-4">
+        <div class="bg-image bg-image1 portrait"></div>
+      </div>
+      <div class="col-4">
+        <div class="bg-image bg-image5 portrait"></div>
+      </div>
+      <div class="col-6">
+        <div class="bg-image bg-image3 landscape"></div>
+      </div>
+      <div class="col-6">
+        <div class="bg-image bg-image4 landscape"></div>
+      </div>
+      <div class="col-6">
+        <div class="bg-image bg-image5 landscape"></div>
+      </div>
+      <div class="col-6">
+        <div class="bg-image bg-image6 landscape"></div>
+      </div> -->
     <!-------------------------------- footer section -->
 <footer class="padded grid-spaceBetween bg-dark">
     <div class="col-4-bottom">
@@ -138,6 +192,9 @@
 
   <!-- Add JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Lightgallery for pop-ups  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
 
   <!-- Chatra {literal} -->
   <script>
@@ -168,8 +225,8 @@
   <!-- animate on scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- my Java Script -->
   <script src="/scripts.js"></script>
-
 
   </body>
   </html>

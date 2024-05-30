@@ -17,3 +17,5 @@ _select_data:
 
   gallery-backgrounds: 
     bg-dark: Dark Background
+    bg-featured: Featured Background
+    bg-light: White Background

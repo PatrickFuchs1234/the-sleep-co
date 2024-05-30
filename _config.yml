@@ -15,7 +15,8 @@ _select_data:
     col-4_sm-12: One Third (Stacked)
     col-3_sm-12: One Quarter (Stacked)
 
+# achtung Spelling immer mehrzahl verwenden - auch Gallery wird zu Galleries
   gallery-background-standard-galleries:
-    - bg-light
-    - bg-dark
-    - bg-featured
+    bg-light: White Background
+    bg-dark: Dark Background
+    bg-featured: Featured Background

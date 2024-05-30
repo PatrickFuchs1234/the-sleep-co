@@ -16,6 +16,6 @@ _select_data:
     col-3_sm-12: One Quarter (Stacked)
 
   gallery-background-standard-gallerys:
-     - bg-light
-     - bg-dark
-     - bg-featured
+    - bg-light
+    - bg-dark
+    - bg-featured

@@ -15,7 +15,7 @@ _select_data:
     col-4_sm-12: One Third (Stacked)
     col-3_sm-12: One Quarter (Stacked)
 
-  gallery-background-standard-gallerys:
+  gallery-background-standard-galleries:
     - bg-light
     - bg-dark
     - bg-featured

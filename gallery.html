@@ -1,5 +1,8 @@
 ---
 layout: default
+popup-gallery: true
+section-button-gallery: Dark Background
+gallery-background: bg-dark
 gallery:
    -
       column-size: col-4
@@ -32,23 +35,9 @@ gallery:
     </div>
 </header>
 
-<!-- Popup Gallery -->
-  <section>
-    <h2 class="text-center padded-t"> Popup gallery </h2>
-      <div class="gallery grid padded" id="lightgallery">
-
-      {% for item in page.gallery%}
-        <a class="{{item.column-size}} padded-05" href="{{item.gallery_image}}"> 
-          <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}');">
-          </div>
-        </a>
-      {% endfor %}
-
-      </div>
-  </section>
-
+{% if page.popup-gallery == true %}
 <!-- Popup Gallery 2 button...-->
-  <section class="bg-dark">
+  <section class="{% if page.section-button-gallery == 'Dark Background'%} bg-dark {% endif %}">
     <h2 class="text-center padded-t"> See what we did</h2>
       <div class="gallery padded text-center" id="lightgallery-2">
 
@@ -65,9 +54,24 @@ gallery:
       </div>
   </section>
 
+<!-- Popup Gallery -->
+  <section">
+    <h2 class="text-center padded-t"> Popup gallery </h2>
+      <div class="gallery grid padded" id="lightgallery">
 
+      {% for item in page.gallery%}
+        <a class="{{item.column-size}} padded-05" href="{{item.gallery_image}}"> 
+          <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}');">
+          </div>
+        </a>
+      {% endfor %}
+
+      </div>
+  </section>
+
+{% else %}
 <!-- Standard Gallery -->
-  <section>
+  <section class="{{page.gallery-background}}>
     <h2 class="text-center padded-t"> Standard gallery </h2>
     <div class="gallery grid padded">
 
@@ -80,6 +84,12 @@ gallery:
 
     </div>
   </section>
+
+{% endif %}
+
+
+
+
 
 <!-- old gallery bevore Jekyllfied -->
       <!-- 

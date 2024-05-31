@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark: #192B37;
+    --featured: #FFBE00;
+    --grey: rgb(120 120 125);
+}
+
 [class*="col-"],
 [class*="col_"],
 [class~="col"] {
@@ -110,11 +116,11 @@
     color: white;
     } */
 
-    .bg-featured { background-color: lightblue; }
+    .bg-featured { background-color: var(--featured); }
     .bg-light { background-color: rgb(245,245,245); }
 
     .bg-image {
-    background-color: grey; /* Set a fall-back color while images are loading */ 
+    background-color: var(--grey); /* Set a fall-back color while images are loading */ 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -145,12 +151,12 @@
 .padded-small   {padding: 1rem;}
 
 .bg-dark{
-    background-color: #192B37;
+    background-color: var(--dark);
     color: white;
 }
 
 /* textstyles */
-.featured-text{ color: #FFBE00;}
+.featured-text{ color: var(--featured);}
 .white-text{ color: white;}
 
 .text-sm {font-size: 1.5rem;}
@@ -162,11 +168,11 @@
 
 .subtitle{
     font-size: 1.2rem;
-    color: rgb(120 120 125);
+    color: var(--grey);
 }
 .quote-icon{
     font-size: 6rem;
-    color: rgb(120 120 125);
+    color: var(--grey);
     line-height: 1;
 }   
 
@@ -191,7 +197,7 @@
 
 body{
     font-family: 'Catamaran', sans-serif;
-    color: #192B37;
+    color: var(--dark);
 }
 h2{ 
     font-size: 2.5rem;
@@ -220,7 +226,7 @@ a{
     border-bottom: 1px solid;
 }
 a:hover {
-    color: #FFBE00;
+    color: var(--featured);
 }
 
 /* --------------------------------Header and footer styles */
@@ -262,7 +268,7 @@ footer a{
 }
 
 .hamburger-button.active{
-    color: #FFBE00;
+    color: var(--featured);
 }
 
 .hamburger-button i{
@@ -298,8 +304,8 @@ footer a{
 }
 
 .gallery .button{
-    background-color: #FFBE00;
-    color:#192B37;
+    background-color: var(--featured);
+    color:var(--dark);
     border: none;
     border-radius: 0.5rem;
     padding: 1rem 3rem;
@@ -307,9 +313,9 @@ footer a{
 }
 
 .gallery .button:hover{
-    background-color: #192B37;
-    color: #FFBE00;
-    border: 1px solid #FFBE00;
+    background-color: var(--dark);
+    color: var(--featured);
+    border: 1px solid var(--featured);
 }
 
 /* Background of gallery when active */
@@ -339,7 +345,7 @@ footer a{
     font-size: 2rem;
     padding: 1% 4%;
     margin: 0;
-    color: #FFBE00;
+    color: var(--featured);
 }
 
 .navrechts {

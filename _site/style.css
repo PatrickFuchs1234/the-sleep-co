@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --dark: #192B37;
-    --featured: #FFBE00;
-    --grey: rgb(120 120 125);
-}
-
 [class*="col-"],
 [class*="col_"],
 [class~="col"] {

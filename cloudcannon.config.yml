@@ -42,7 +42,7 @@ _inputs:
     cascade: true
   layout:
     type: text
-    hidden: true
+    hidden: false
     cascade: true
 _select_data:
   aspect-ratios:
